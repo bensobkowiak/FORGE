@@ -143,11 +143,6 @@ are KpSC-only.
 |---|---|
 | `organise_by_genus.py` | reorganise `results/` into per-genus folders of assemblies and reports |
 | `check_organised_fastas.py` | verify those FASTAs against the results table |
-| `refresh_by_genus.py` | re-run Kraken2 / AMR tools across the organised tree |
-| `run_kleborate_tree.py` | backfill Kleborate, choosing the preset per sample |
-| `merge_gene_columns.py` | collapse gene columns split by spelling (`blaTEM-1` / `blaTEM.1`) |
-| `backfill_chr_species.py` | populate `Chr_Contig_Species` for older rows |
-| `sync_results.sh` | selectively sync results between machines |
 
 ---
 
