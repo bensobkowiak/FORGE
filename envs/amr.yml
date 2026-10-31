@@ -1,0 +1,26 @@
+name: ont_amr
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9
+  - ncbi-amrfinderplus=4.2.7
+  - rgi>=6.0.3
+  - kleborate=3.1.3
+  - kaptive=3.2.1
+  - blast>=2.14.0
+  - pip
+  - pip:
+    - resfinder>=4.5.0
+    # CefiderocolFinder: install manually from GitHub
+    # https://github.com/Bryan-vd-Brand/CefiderocolFinder
+    # NOTE: not a FASTA gene screener. It takes paired-end Illumina FASTQ
+    # (--reads R1 R2), needs GATK + snpEff reference databases, supports only
+    # A. baumannii / E. coli / K. pneumoniae / P. aeruginosa, and emits
+    # frameshift/missense variant tables rather than gene calls. It cannot be
+    # fed the assemblies this pipeline produces -- see CEFIDEROCOLFINDER in
+    # modules/amr.nf, whose current invocation is a placeholder that writes a
+    # stub when the tool is absent.
+    # parex: install manually from GitHub
+    # https://github.com/leosanbu/parex

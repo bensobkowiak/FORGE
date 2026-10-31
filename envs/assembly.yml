@@ -1,0 +1,8 @@
+name: ont_mob_suite
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - mob_suite=3.1.9
+  - pip

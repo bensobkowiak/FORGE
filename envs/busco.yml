@@ -1,0 +1,10 @@
+name: ont_busco
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - busco>=6.0.0
+  - blast
+  - hmmer
+  - python=3.11

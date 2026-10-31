@@ -1,0 +1,7 @@
+name: ont_filtlong
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - filtlong

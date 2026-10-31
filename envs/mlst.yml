@@ -1,0 +1,7 @@
+name: ont_mlst
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - mlst
