@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+# Forces multiprocessing fork start method before checkm2 loads, preventing
+# the spawn-based pickle failure of name-mangled Predictor attributes on macOS.
+import multiprocessing
+try:
+    multiprocessing.set_start_method('fork', force=True)
+except RuntimeError:
+    pass
+import os
+os.environ.setdefault('OBJC_DISABLE_INITIALIZE_FORK_SAFETY', 'YES')
+import re, sys
+from checkm2.main import main
+sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+sys.exit(main())
