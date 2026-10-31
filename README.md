@@ -118,7 +118,7 @@ is set to `Mismatch`, rather than reducing the genome to a fragment.
 **Mobile-element rescue.** MOB-recon calls a contig chromosomal whenever it finds no
 replicon, so plasmids and ICEs carrying only a relaxase are misassigned. Chromosomal
 contigs with a relaxase or *oriT* and length ≤ `mge_max_len` (1 Mb) are moved into the
-plasmid set as `rescued_MGE_<n>`. Read depth is deliberately **not** a criterion —
+plasmid set as `rescued_MGE_<n>`. Read depth is deliberately **not** a criterion -
 plasmid and chromosome coverage are not reliably separated in ONT libraries.
 
 **Query contigs.** Off-genus contigs below 1 Mb with no evidence of mobility are
