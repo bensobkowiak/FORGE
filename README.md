@@ -20,7 +20,7 @@ detection. One wide results table per collection, one directory per sample.
 | Genome quality | CheckM2, BUSCO |
 | Depth & circularity | minimap2 / samtools, Flye assembly graph |
 | Typing | mlst, Kleborate (+ Kaptive) |
-| AMR | AMRFinderPlus, ResFinder, RGI, CefiderocolFinder |
+| AMR | AMRFinderPlus, ResFinder, RGI |
 
 ---
 
